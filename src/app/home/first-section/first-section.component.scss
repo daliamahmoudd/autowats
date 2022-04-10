@@ -1,0 +1,50 @@
+.back {
+  background-image: url('../../../assets/back.svg');
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 670px;
+  line-height: 2;
+  font-family: 'Metropolis';
+  margin-top: -6rem;
+  // .secBack {
+  //   background-image: url('../../../assets/vector 4.svg');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  .align {
+    margin-left: 4.4rem;
+    margin-top: 14rem;
+
+    .content {
+      color: #efefef;
+    }
+    .blue {
+      color: #23d4ce;
+    }
+    button {
+      background: #23d4ce;
+    }
+  }
+  .mobile {
+    position: absolute;
+    right: 17rem;
+    top: 12rem;
+  }
+}
+// }
+@media screen and (max-width: 425px) {
+  .back {
+    .align {
+      margin-left: 0rem;
+      margin-top: 9rem;
+    }
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .back {
+    .align {
+      margin-left: 1.2rem;
+      margin-top: 10rem;
+    }
+  }
+}

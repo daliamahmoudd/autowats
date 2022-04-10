@@ -1,0 +1,37 @@
+.row {
+  background-color: #f7f7f7;
+  .line {
+    width: 75px;
+    margin-left: 36rem;
+  }
+  .feature__Cont {
+    background-color: white;
+    width: 20rem;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 20px;
+    &.d-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      img {
+        width: 60px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .row {
+    .line {
+      margin-left: 6rem;
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .row {
+    .line {
+      margin-left: 17rem;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="text-center mt-5">Testimonials</h3>
+      <img src="../../../assets/Line 7.svg" class="line" alt="" />
+      <p class="text-center">
+        Read hear What our clients around the world say about us and our
+        service.
+      </p>
+    </div>
+  </div>
+  <div class="row test_cont">
+    <div class="col-lg-4 col-sm-12 ms-md-5 ms-sm-0">
+      <div class="d-flex ms-2 flex-md-nowrap flex-wrap">
+        <div
+          *ngFor="let icon of img; index as i"
+          class="d-flex align-items-center flex-column"
+        >
+          <img
+            [src]="icon.imgSrc"
+            class="icon"
+            (click)="icon.flag = true"
+            (mouseleave)="icon.flag = false"
+            [ngStyle]="{ 'margin-top.px': randomLeft[i] }"
+            alt=""
+          />
+          <div
+            [ngClass]="icon.flag == true ? 'reviewCont' : 'none'"
+            style="margin-top: 32px"
+          >
+            <div class="arrow-up"></div>
+            <div class="review">
+              <h5 class="text-center">adham sabry</h5>
+              <small class="text-center"
+                >This service helped me with my bussiness.</small
+              >
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-12 ms-md-5 ms-sm-0">
+      <div class="d-flex ms-5 flex-md-nowrap flex-wrap">
+        <div
+          *ngFor="let icon of img2; index as i"
+          class="d-flex align-items-center flex-column"
+        >
+          <img
+            [src]="icon.imgSrc"
+            class="icon"
+            (click)="icon.flag = true"
+            (mouseleave)="icon.flag = false"
+            [ngStyle]="{ 'margin-top.px': randomLeft[i] }"
+            alt=""
+          />
+          <div
+            [ngClass]="icon.flag == true ? 'reviewCont' : 'none'"
+            style="margin-top: 32px"
+          >
+            <div class="arrow-up"></div>
+            <div class="review">
+              <h5 class="text-center">adham sabry</h5>
+              <small class="text-center"
+                >This service helped me with my bussiness.</small
+              >
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
